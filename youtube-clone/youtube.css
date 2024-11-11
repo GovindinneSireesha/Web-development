@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    height:70px;
+    padding:20px;
+}
+main{
+    height:100vh;
+    display:flex;
+    background-color:rgb(236, 233, 233);
+}
+.sidebar{
+    background-color: white;
+    height:100%;
+    width:15%;
+}
+.leftsection{
+    display: flex;
+    align-items: center;
+}
+.leftsection #menu{
+    padding: 0 7px;
+    cursor: pointer;
+}
+.center{
+    display: flex;
+}
+.center form{
+    display: flex;
+    height:35px;
+    border:1px solid;
+}
+.center input{
+    width:500px;
+    padding: 10px;
+    border-radius: 1px;
+    height:100%;
+}
+.center button{
+    height: 100%;
+    width:50px;
+}
+.mic{
+    margin-top: 4px;
+    padding-left: 2px;
+}
+.material-icons{
+    padding: 0 7px;
+    color: rgba(85, 84, 84, 0.932);
+    cursor: pointer;
+}
+.nav{
+    display:flex;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+.nav-link span{
+    margin-left: 10px;
+}
+.nav-link:hover{
+    cursor: pointer;
+    background: gray;
+}
+.active{
+    background: rgb(170, 167, 167);
+}
+.maincontent{
+    padding:5px 5px;
+    height:100%;
+    width:100%;
+    overflow-y: scroll;
+}
+.videos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.video{
+    width:270px;
+    margin-bottom: 30px;
+}
+.picture{
+    width:100px;
+    height:150px;
+}
+.picture img{
+    object-fit: cover;
+    width:220px;
+    height:94%;
+}
+.author img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.details{
+    display: flex;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title h4{
+    font-size: small;
+    line-height: 15px;
+}
+.title a,span{
+    text-decoration: none;
+    font-size: smaller;
+    color: rgb(100, 93, 93);
+}
+@media (max-width:768px){
+    .sidebar{
+        display: none;
+    }
+    .center{
+        display:none;
+    }
+}
+@media (max-width:900px){
+    .center input{
+        width:20rem;
+    }
+}
